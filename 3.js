@@ -24,7 +24,13 @@ console.log(listAllTasks);
 
 let deleteTask = (task) =>
 {
-    let index = tasks.indexOf(value);
+    let index = tasks.indexOf(task);
+    console.log(task + " has been deleted");
 
     tasks.splice(index, 1);
+    return(tasks.length);
 }
+
+deleteTask("Study");
+
+console.log(tasks);

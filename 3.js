@@ -3,6 +3,7 @@ let tasks = [];
 tasks.push("Work");//Adds to array
 tasks.length;
 
+//AddTask Method
 let addTask = (newTask) =>
 {
     tasks.push(newTask);
@@ -13,6 +14,7 @@ let addTask = (newTask) =>
 addTask("Study");
 addTask("Exercise");
 
+//ListAllTasks Method
 let listAllTasks = tasks.forEach((task) =>
 {
     console.log(task);
@@ -22,6 +24,7 @@ let listAllTasks = tasks.forEach((task) =>
     
 console.log(listAllTasks);
 
+//DeleteTask Method
 let deleteTask = (task) =>
 {
     let index = tasks.indexOf(task);

@@ -22,7 +22,9 @@ let listAllTasks = tasks.forEach((task) =>
     
 console.log(listAllTasks);
 
-//let deleteTask
-//let index = tasks.indexOf(value);
+let deleteTask = (task) =>
+{
+    let index = tasks.indexOf(value);
 
-//tasks.splice(index, 1);
+    tasks.splice(index, 1);
+}

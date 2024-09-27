@@ -36,11 +36,10 @@ let deleteTask = (task) =>
 {
     let index = tasks.indexOf(task);
     console.log(task + " has been deleted");
-
     tasks.splice(index, 1);
+    
+    console.log(tasks.length + " tasks are left");
     return(tasks.length);
 }
-
 deleteTask("Study");
 
-console.log(tasks);

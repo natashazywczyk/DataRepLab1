@@ -35,9 +35,15 @@ listAllTasks();
 let deleteTask = (task) =>
 {
     let index = tasks.indexOf(task);
-    console.log(task + " has been deleted");
-    tasks.splice(index, 1);
-    
+    if(index > -1)
+    {
+        tasks.splice(index, 1);
+        console.log(task + " has been deleted");
+    }
+    else
+    {
+        console.log( task + " is not in my tasks");
+    }
     console.log(tasks.length + " tasks are left");
     return(tasks.length);
 }

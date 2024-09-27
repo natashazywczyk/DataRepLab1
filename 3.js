@@ -11,9 +11,6 @@ let addTask = (newTask) =>
     return(tasks.length);
 }
 
-addTask("Study");
-addTask("Exercise");
-
 //ListAllTasks Method
 /*let listAllTasks = tasks.forEach((task) =>
 {
@@ -29,7 +26,7 @@ let listAllTasks = () =>
     })
 }
 
-listAllTasks();
+
 
 //DeleteTask Method
 let deleteTask = (task) =>
@@ -47,5 +44,10 @@ let deleteTask = (task) =>
     console.log(tasks.length + " tasks are left");
     return(tasks.length);
 }
+
+//Methods being used
+addTask("Study");
+addTask("Exercise");
+listAllTasks();
 deleteTask("Study");
 

@@ -13,7 +13,14 @@ let addTask = (newTask) =>
 addTask("Study");
 addTask("Exercise");
 
+let listAllTasks = tasks.forEach((task) =>
+{
+    console.log(task);
 
+    return(tasks.length);
+})
+    
+console.log(listAllTasks);
 
 //let deleteTask
 //let index = tasks.indexOf(value);

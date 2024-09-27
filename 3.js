@@ -15,14 +15,21 @@ addTask("Study");
 addTask("Exercise");
 
 //ListAllTasks Method
-let listAllTasks = tasks.forEach((task) =>
+/*let listAllTasks = tasks.forEach((task) =>
 {
     console.log(task);
 
     return(tasks.length);
-})
-    
-console.log(listAllTasks);
+})*/
+
+let listAllTasks = () =>
+{
+    tasks.forEach((task) => {
+        console.log(task);
+    })
+}
+
+listAllTasks();
 
 //DeleteTask Method
 let deleteTask = (task) =>
